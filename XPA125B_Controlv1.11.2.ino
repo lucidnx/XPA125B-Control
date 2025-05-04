@@ -313,19 +313,19 @@ void setFreq(String freq)
     unsigned long freq_long = strtoul(frequency.c_str(), NULL, 10);
 
     // Determine band based on frequency ranges (adjust ranges if needed for your band plan)
-    if      (freq_long >= 1800000 && freq_long < 2000000)   { determinedBand = "160"; }
-    else if (freq_long >= 3500000 && freq_long < 4000000)   { determinedBand = "80"; }
-    else if (freq_long >= 5000000 && freq_long < 5500000)   { determinedBand = "60"; }  // Wider range common for 60m
-    else if (freq_long >= 7000000 && freq_long < 7300000)   { determinedBand = "40"; }
-    else if (freq_long >= 10100000 && freq_long < 10150000) { determinedBand = "30"; }
-    else if (freq_long >= 14000000 && freq_long < 14350000) { determinedBand = "20"; }
-    else if (freq_long >= 18068000 && freq_long < 18168000) { determinedBand = "17"; }
-    else if (freq_long >= 21000000 && freq_long < 21450000) { determinedBand = "15"; }
-    else if (freq_long >= 24890000 && freq_long < 24990000) { determinedBand = "12"; }
+    if      (freq_long >= 1800000 && freq_long < 2000001)   { determinedBand = "160"; }
+    else if (freq_long >= 3500000 && freq_long < 4000001)   { determinedBand = "80"; }
+    else if (freq_long >= 5250000 && freq_long < 5450001)   { determinedBand = "60"; }  // Wider range common for 60m
+    else if (freq_long >= 7000000 && freq_long < 7300001)   { determinedBand = "40"; }
+    else if (freq_long >= 10100000 && freq_long < 10150001) { determinedBand = "30"; }
+    else if (freq_long >= 14000000 && freq_long < 14350001) { determinedBand = "20"; }
+    else if (freq_long >= 18068000 && freq_long < 18168001) { determinedBand = "17"; }
+    else if (freq_long >= 21000000 && freq_long < 21450001) { determinedBand = "15"; }
+    else if (freq_long >= 24890000 && freq_long < 24990001) { determinedBand = "12"; }
     // Note: 11m band check commented out, uncomment and adjust DAC value in setBand if needed.
     // else if (freq_long >= 26900000 && freq_long < 27500000) { determinedBand = "11"; }
-    else if (freq_long >= 28000000 && freq_long < 29700000) { determinedBand = "10"; }
-    else if (freq_long >= 50000000 && freq_long < 54000000) { determinedBand = "6"; }
+    else if (freq_long >= 28000000 && freq_long < 29700001) { determinedBand = "10"; }
+    else if (freq_long >= 50000000 && freq_long < 54000001) { determinedBand = "6"; }
 
     setBand(determinedBand); // Set the DAC voltage based on the determined band
 }
