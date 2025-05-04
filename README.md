@@ -22,7 +22,7 @@ This project uses an ESP32 microcontroller to interface between an Icom IC-705 r
 *   ESP32 module (tested on ESP-WROOM-32, but likely compatible with many others)
 *   Icom IC-705 Radio
 *   Xiegu XPA125B Amplifier (connection using ACC)
-*   Connecting Wires
+*   Connecting Wires, including power (in this case I am using HAM PSU that outputs 13.8V, connectors for power wires should be good idea too)
 *   Optional: Foot switch or other momentary switch for external PTT input.
 *   Stable power supply for the ESP32, as it can affect DAC voltages. I have used DC-DC converter QS-1205CME-3A (https://vi.aliexpress.com/item/1005005393995240.html)
 *   2N2222 or other NPN transistor, 10kOhm, 2kOhm and 1kOhm resistors, 0.1 µF ceramic capacitor
@@ -39,15 +39,7 @@ This project uses an ESP32 microcontroller to interface between an Icom IC-705 r
 *   **GND:** Common Ground -> Connect to XPA125B ACC GND, PTT switch GND, and ESP32 Power Supply GND.
 
 ## Schematics
-
-1. PTT control output for XPA125B (GPIO 26)
-  
-   
-2.  Band selection output (GPIO 25)
-
-
-3.  PTT Input pin (GPIO 34)
-
+    ![image](https://github.com/user-attachments/assets/de07165c-9e72-42bc-b973-b98037844a57)
 
 
 ## Software & Setup
