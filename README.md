@@ -36,7 +36,8 @@ This project uses an ESP32 microcontroller to interface between an Icom IC-705 r
 
 ## Schematics
 
-![image](https://github.com/user-attachments/assets/14942881-1c83-455b-83fa-f4a0497dbd52)
+![schematics](https://github.com/user-attachments/assets/9c88de5a-8f9e-437e-92f0-efc036906c2f)
+
 
 
 ## Software & Setup
