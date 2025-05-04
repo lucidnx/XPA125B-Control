@@ -1,7 +1,3 @@
-# XPA125B-Control
-Program to control XPA125B with IC-705 using bluetooth serial connection to ESP32 module.
-
-
 # ESP32 Controller for XPA125B Amplifier with IC-705 via Bluetooth CI-V
 
 ## Overview
