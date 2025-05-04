@@ -39,7 +39,8 @@ This project uses an ESP32 microcontroller to interface between an Icom IC-705 r
 *   **GND:** Common Ground -> Connect to XPA125B ACC GND, PTT switch GND, and ESP32 Power Supply GND.
 
 ## Schematics
-    ![image](https://github.com/user-attachments/assets/de07165c-9e72-42bc-b973-b98037844a57)
+
+![image](https://github.com/user-attachments/assets/14942881-1c83-455b-83fa-f4a0497dbd52)
 
 
 ## Software & Setup
